@@ -32,7 +32,7 @@ public class SendServer {
         String body = "text="+"BilibiliTask运行结果"+"&desp="+desp;
         StringEntity entityBody = new StringEntity(body,"UTF-8");
         HttpClient client = HttpClients.createDefault();
-        HttpPost httpPost = new HttpPost("https://sc.ftqq.com/"+sckey+".send");
+        HttpPost httpPost = new HttpPost("https://api2.pushdeer.com/message/push?pushkey=PDU2172T4XC9UKe1KkN7NekuB3dyOa7FP0zc2oZU&text");
         httpPost.addHeader("Content-Type","application/x-www-form-urlencoded");
         httpPost.setEntity(entityBody);
         HttpResponse resp ;
